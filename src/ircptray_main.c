@@ -245,17 +245,40 @@ notify_on_discovering (gchar *device_name, gchar *icon )
 
 	notify_msg = g_strdup_printf( _("Remote device discovered: %s"),
 					 		      device_name);
-
+#ifdef NOTIFY_CHECK_VERSION
+#if NOTIFY_CHECK_VERSION(0,7,0)
+notification = notify_notification_new (g_get_application_name(),
+                                            notify_msg,
+                                            icon
+                                           );
+#else
+notification = notify_notification_new (g_get_application_name(),
+                                            notify_msg,
+                                            icon,
+                                           NULL);
+#endif
+#else
 	notification = notify_notification_new (g_get_application_name(),
                                             notify_msg,
                                             icon,
-                                            NULL);
-    if (notification == NULL) {
+                                           NULL);
+#endif
+    
+if (notification == NULL) {
         g_warning("failed to setup notification");
         return;
     }
 
-	notify_notification_attach_to_status_icon (notification, AppTrayIcon);
+
+#ifdef NOTIFY_CHECK_VERSION
+#if NOTIFY_CHECK_VERSION(0,7,0)
+
+#else
+        notify_notification_attach_to_status_icon (notification, AppTrayIcon);
+#endif
+#else
+        notify_notification_attach_to_status_icon (notification, AppTrayIcon);
+#endif
 
 	if (!notify_notification_show (notification, NULL))
 	    g_warning("failed to send notification");
@@ -275,13 +298,39 @@ notify_on_disappearing (gchar *device_name, gchar *icon )
     notify_msg = g_strdup_printf( _("Remote device %s disappeared"),
 					 		      device_name);
 
-	notification = notify_notification_new (g_get_application_name(),
-                                       notify_msg,
-                                       icon,
-                                       NULL);
-
+#ifdef NOTIFY_CHECK_VERSION
+#if NOTIFY_CHECK_VERSION(0,7,0)
+notification = notify_notification_new (g_get_application_name(),
+                                            notify_msg,
+                                            icon
+                                           );
+#else
+notification = notify_notification_new (g_get_application_name(),
+                                            notify_msg,
+                                            icon,
+                                           NULL);
+#endif
+#else
+        notification = notify_notification_new (g_get_application_name(),
+                                            notify_msg,
+                                            icon,
+                                           NULL);
+#endif
 	if (notification != NULL) {
-	    notify_notification_attach_to_status_icon (notification, AppTrayIcon);
+	    
+
+
+
+#ifdef NOTIFY_CHECK_VERSION
+#if NOTIFY_CHECK_VERSION(0,7,0)
+#else
+notify_notification_attach_to_status_icon (notification, AppTrayIcon);
+#endif
+#else
+notify_notification_attach_to_status_icon (notification, AppTrayIcon);
+#endif
+
+
 
 		if (!notify_notification_show (notification, NULL))
 			g_warning("failed to send notification\n");

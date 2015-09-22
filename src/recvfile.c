@@ -253,10 +253,27 @@ static gboolean recvfile_onrecv(GIOChannel *source,
 
 				notify_init(PACKAGE);
 
-				n = notify_notification_new (title,
+
+
+#ifdef NOTIFY_CHECK_VERSION
+#if NOTIFY_CHECK_VERSION(0,7,0)
+                                n = notify_notification_new (title,
+                                       msg,
+                                       MAIN_ICON
+                                       );
+#else
+                                n = notify_notification_new (title,
                                        msg,
                                        MAIN_ICON,
                                        GTK_WIDGET(AppTrayIcon));
+#endif
+#else
+                                n = notify_notification_new (title,
+                                       msg,
+                                       MAIN_ICON,
+                                       GTK_WIDGET(AppTrayIcon));
+#endif
+
 
 				if (n != NULL) {
 					notify_notification_set_urgency(n, NOTIFY_URGENCY_NORMAL);
