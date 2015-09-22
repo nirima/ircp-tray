@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Ircp Tray
+_Comment=A simple OBEX file transfer applet
+Exec=ircp-tray
+Icon=ircp-tray
+Terminal=false
+Categories=Utility;

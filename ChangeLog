@@ -1,0 +1,91 @@
+2011-05-30 Daniele Napolitano <dnax88@gmail.com>
+    * Removed all deprecated GTK+2 symbols, now GTK+ 3 compliant
+
+2010-07-07 Daniele Napolitano <dnax88@gmail.com>
+    * Fixed bug #602566: German translation not built by default
+    * Fixed a bug in the receiving window that no device name is displayed (and possible segfault)
+
+2010-07-03 Daniele Napolitano <dnax88@gmail.com>
+    * Fixed bug #486191: Devices polling problems on 64bit architecture
+    * Fixed bug #397515: Buffer overflow with long filenames
+    * Removed 3 seconds wait for device discovering at start up
+    * Fixed tray icon implementation, now uses GtkStatusIcon (no more deprecaded GTK+ symbols)
+    Translations:
+    * New German (de) translation (almost complete)
+    * New Dutch (nl) translation (incomplete)
+    * New Finnish (fi) translation (incomplete)
+    * Updated Czech (cs) translation (complete)
+    * Updated Spanish (es) translation (complete)
+    * Updated French (fr) translation (almost complete)
+    * Updated Galician (gl) translation (complete)
+    * Updated Hebrew (he) translation (complete)
+    * Updated Polish (pl) translation (almost complete)
+    * Updated Russian (ru) translation (complete)
+    * Updated Swedish (sv) translation (complete)
+    * Updated Chinese (Simplified) (zh_CN) translation (partially complete)
+
+2009-02-18 Daniele Napolitano <dnax88@gmail.com>
+	* Check for IrDA service irattach running
+	* Return right exit code on -v and -h cli options
+	* Added Czech (by Jakub Žáček) translation
+	* Added Galician (by Miguel Anxo Bouzada) translation
+	* Added Traditional Chinese (by BlueT - Matthew Lien) translation
+	* Updated it.po and es.po
+
+2008-11-10 Daniele Napolitano <dnax88@gmail.com>
+	* New Hebrew translation (by Yaron)
+	* History window refreshed
+
+2008-10-27 Daniele Napolitano <dnax88@gmail.com>
+	* New Russian translation (by Alexei Klimenko)
+	* New Spanish translation [incomplete] (by ToniTC)
+	* Debug information more accurate
+	* Resolved a boring bug that on sending canceling the program freeze
+	* Now Ircp Tray detect if transfer is aborted by remote
+	* On receiving, do not overwrite the file if it already exists
+
+2008-07-18 Daniele Napolitano <dnax88@gmail.com>
+	* New Italian and French translation
+	* Transfer rate is showed during file transfers
+	* Menu item uses stock icons
+	* History is cleanable
+	* Receive dialog uses YES-NO buttons instead OK-CANCEL
+
+2007-05-29 Xin Zhen <xlonestar2000@aim.com>
+	* New Polish and Swedish translation
+
+2007-05-26 Xin Zhen <xlonestar2000@aim.com>
+	* Fully gtk icon theme
+	* Replace 80-mid style icons with new Tango style one. (by Dieter Vanderfaeillie <dieter.vanderfaeillie@gmail.com>>
+
+2007-05-05 Xin Zhen <xlonestar2000@aim.com>
+	* libnotify support without system() (by Stephan Berberig <s.berberig@arcor.de>)
+	* Updated eggtrayicon to support tray icon transparency. (by Stephan Berberig <s.berberig@arcor.de>)
+	* First patch for gtk icon theme integration
+
+2007-02-24 Xin Zhen <xlonestar2000@aim.com>
+	* Merged i18n (by Hellwolf)
+	* Wrong (zero) file length reported when receive from T68 phone, fixed.
+
+2006-12-21 Xin Zhen <xinzhen@pub.minidns.net>
+	* "Quit" menu item added
+	* Crash on showing log when no log available. Fixed
+	* Utilize EGG tray icon message
+	* Dialog "Receive OK" is replaced by libnotify
+	* Layout of "Progress Window" adjusted a little
+	* "Save As" dialog now does remember the last directory it used.
+	* Make OK button the default action of "Save As" dialog.
+
+2006-12-06 Yang Hong <yanghong@ccoss.com.cn>
+
+	* AUTHORS, COPYING updated author info
+	* added po/POFILES.in po/LINGUAS for i18n support
+
+2006-01-31 Xin Zhen <xinzhen@pub.minidns.net>
+
+	* Fixed a bug that prevents receiving from Windows Mobile 2003 PDAs
+
+2005-05-28 Xin Zhen <xinzhen@pub.minidns.net>
+
+	* Gives user a feedback when beaming finished
+	* Fixed a crash bug in the server codes

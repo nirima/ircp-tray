@@ -1,0 +1,333 @@
+# Czech translation for ircp-tray
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the ircp-tray package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ircp-tray\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-02-16 02:53+0100\n"
+"PO-Revision-Date: 2009-12-10 17:36+0000\n"
+"Last-Translator: Konki <pavel.konkol@seznam.cz>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-06-26 01:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#. Translators: the following string contains one strings that
+#. * is passed to it: is the ircp-tray program name.
+#. 
+#: ../src/ircptray.c:59
+#, c-format
+msgid ""
+"Usage:\n"
+"  %s: [-v] [-h]\n"
+msgstr ""
+"Použití:\n"
+"  %s: [-v] [-h]\n"
+
+#. Translators: the following string contains two strings that
+#. * are passed to it: the first is the ircp-tray program name and
+#. * the second is the program version number.
+#. 
+#: ../src/ircptray.c:69
+#, c-format
+msgid ""
+"%s version %s\n"
+"\n"
+msgstr ""
+"%s verze %s\n"
+"\n"
+
+#: ../src/app.c:60
+msgid "You don't seem to have IrDA enabled in your kernel, quit."
+msgstr "Zdá se, že nemáte povolené IrDA ve vašem jádře, ukončování."
+
+#: ../src/app.c:76
+msgid "IrDA service not started!"
+msgstr "IrDA služba nebyla zahájena!"
+
+#: ../src/app.c:80
+#, c-format
+msgid ""
+"<i>You must edit <b>\"/etc/default/irda-utils\"</b> and set irattach to "
+"start it on boot.\n"
+"\n"
+"Otherwise, try typing in terminal:\n"
+"\n"
+"\"sudo irattach /dev/ttyS1 -s\"\n"
+"\n"
+"Read the irattach manual for more info.\n"
+"\n"
+"<span color=\"#f00000\" style=\"normal\"><b>%s will not be able to "
+"work.</b></span></i>"
+msgstr ""
+"<i>Musíte upravit<b>\"/etc/default/irda-utils\"</b> a nastavit irattach pro "
+"zapnutí při bootování\n"
+"\n"
+"Jinak, zkuste napsat do terminálu:\n"
+"\n"
+"\"sudo irattach /dev/ttyS1 -s\"\n"
+"\n"
+"Pro další informace čtěte návod irattach.\n"
+"\n"
+"\n"
+"<span color=\"#f00000\" style=\"normal\"><b>%s nebude "
+"fungovat.</b></span></i>"
+
+#: ../src/app.c:176
+msgid "Send Files"
+msgstr "Odeslat soubory"
+
+#: ../src/app.c:186
+msgid "Get Devices Info"
+msgstr "Získat informace o zařízení"
+
+#: ../src/app.c:196
+msgid "Show History"
+msgstr "Zobrazit historii"
+
+#: ../src/app.c:244 ../src/app.c:246
+msgid "Send files via infrared"
+msgstr "Odeslat soubory pomocí infračerveného  protokolu"
+
+#. Feel free to put your names here translators :-)
+#: ../src/app.c:332
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Jakub Žáček https://launchpad.net/~dawon\n"
+"  Konki https://launchpad.net/~pavel-konkol"
+
+#: ../src/app.c:340
+msgid "A utility for IrDA OBEX beaming and receiving"
+msgstr "Program pro OBEX sdílení a přijímání pomocí IrDA"
+
+#. new device discovered
+#: ../src/app.c:452
+#, c-format
+msgid "Remote device discovered: %s"
+msgstr "Nalezená zařízení: %s"
+
+#: ../src/app.c:473
+#, c-format
+msgid "Infrared File Transfer: %s"
+msgstr "Infračervený přenos souboru: %s"
+
+#: ../src/app.c:505
+#, c-format
+msgid "Remote device %s disappeared"
+msgstr "Vzdálené zařízení %s zmizelo z dosahu"
+
+#: ../src/app.c:522 ../src/app.c:524
+msgid "Infrared File Transfer"
+msgstr "Infračervený přenos souboru"
+
+#: ../src/app.c:591
+msgid "<b>Hints</b>"
+msgstr "<b>Tipy</b>"
+
+#: ../src/app.c:592
+msgid "PNP"
+msgstr "PNP"
+
+#: ../src/app.c:593
+msgid "PDA"
+msgstr "PDA"
+
+#: ../src/app.c:594
+msgid "COMPUTER"
+msgstr "POČÍTAČ"
+
+#: ../src/app.c:595
+msgid "PRINTER"
+msgstr "TISKÁRNA"
+
+#: ../src/app.c:596
+msgid "MODEM"
+msgstr "MODEM"
+
+#: ../src/app.c:597
+msgid "FAX"
+msgstr "FAX"
+
+#: ../src/app.c:598
+msgid "LAN"
+msgstr "LAN"
+
+#: ../src/app.c:599
+msgid "EXTENSION"
+msgstr "ROZŠÍŘENÍ"
+
+#: ../src/app.c:600
+msgid "TELEPHONY"
+msgstr "TELEFON"
+
+#: ../src/app.c:601
+msgid "FILESERVER"
+msgstr "SOUBOROVÝ SERVER"
+
+#: ../src/app.c:602
+msgid "COMM"
+msgstr "COMM"
+
+#: ../src/app.c:603
+msgid "MESSAGE"
+msgstr "ZPRÁVA"
+
+#: ../src/app.c:604
+msgid "HTTP"
+msgstr "HTTP"
+
+#: ../src/app.c:605
+msgid "OBEX"
+msgstr "OBEX"
+
+#. Window title
+#: ../src/app.c:617
+msgid "Information"
+msgstr "Informace"
+
+#: ../src/app.c:757
+msgid "History"
+msgstr "Historie"
+
+#. Frame
+#: ../src/app.c:771
+msgid "<b>Transfers History</b>"
+msgstr "<b>Historie přenosů</b>"
+
+#: ../src/progresswin.c:65
+msgid "Beaming Progress"
+msgstr "Proces odesílání"
+
+#: ../src/progresswin.c:129
+#, c-format
+msgid "<b>Transfering</b> %s"
+msgstr "<b>Přenášení</b> %s"
+
+#: ../src/progresswin.c:138
+#, c-format
+msgid "<small>%.1f KiB of %.1f KiB (%.1fbps)</small>"
+msgstr "<small>%.1f KiB z %.1f KiB (%.1fb/s)</small>"
+
+#: ../src/progresswin.c:140
+#, c-format
+msgid "<small>%.1f KiB of %.1f KiB</small>"
+msgstr "<small>%.1f KiB z %.1f KiB</small>"
+
+#: ../src/progresswin.c:146
+#, c-format
+msgid "%d bytes"
+msgstr "%d bajtů"
+
+#: ../src/recvfile.c:78 ../src/sendfile.c:193
+msgid "succeeded"
+msgstr "dokončeno"
+
+#: ../src/recvfile.c:80 ../src/sendfile.c:195
+msgid "failed"
+msgstr "selhalo"
+
+#: ../src/recvfile.c:82 ../src/sendfile.c:197
+msgid "aborted"
+msgstr "přerušeno"
+
+#: ../src/recvfile.c:87
+#, c-format
+msgid "Receive %s %s"
+msgstr "Přijmout %s %s"
+
+#: ../src/recvfile.c:248
+msgid "Infrared file received"
+msgstr "Souor přijat přes IrDA"
+
+#: ../src/recvfile.c:249
+#, c-format
+msgid ""
+"Saved to: %s\n"
+"Size: %d bytes"
+msgstr ""
+"Uloženo do: %s\n"
+"Velikost: %d bajtů"
+
+#: ../src/recvfile.c:270
+msgid "File receiving was aborted by remote"
+msgstr "Příjem souborů přerušen vzdálenou stranou"
+
+#: ../src/recvfile.c:310
+msgid "Incoming File Transfer"
+msgstr "Příchozí přenos souborů"
+
+#: ../src/recvfile.c:329
+msgid "File already exists"
+msgstr "Soubor již existuje"
+
+#: ../src/recvfile.c:332
+#, c-format
+msgid "The file \"%s\" already exists. Would you like to replace it?"
+msgstr "Soubor \"%s\" již existuje. Chcete jej nahradit?"
+
+#: ../src/recvfile.c:335
+msgid "_Replace"
+msgstr "Nah_radit"
+
+#: ../src/recvfile.c:357
+msgid "Unable to open file for saving"
+msgstr "Nelze otevřít soubor pro zápis"
+
+#: ../src/savefiledlg.c:35
+msgid "Incoming File Transfer Request"
+msgstr "Požadavek na přenos souborů"
+
+#: ../src/savefiledlg.c:46
+#, c-format
+msgid ""
+"A remote IrDA device (%s) is attempting to send you a file. Do you want to "
+"accept it?"
+msgstr ""
+"Vzdálené IrDA zařízení (%s) vám chce poslat soubor. Chcete ho přijmout?"
+
+#. label
+#: ../src/savefiledlg.c:52
+msgid "File name:"
+msgstr "Jméno souboru:"
+
+#. save to button
+#: ../src/savefiledlg.c:61
+msgid "Save to"
+msgstr "Uložit do"
+
+#: ../src/sendfile.c:130
+msgid "Unable to connect remote"
+msgstr "Nelze se připojit ke vzdálené straně"
+
+#: ../src/sendfile.c:204
+#, c-format
+msgid "Sending %s %s"
+msgstr "Odesílání %s %s"
+
+#: ../src/sendfile.c:245
+msgid "File was sent successfully"
+msgstr "Soubor byl úspěšně odeslán"
+
+#: ../src/sendfile.c:248
+msgid "File beaming was aborted by remote"
+msgstr "Odesílání souboru bylo přerušeno vzdálenou stranou"
+
+#: ../src/sendfile.c:273
+msgid ""
+"It seems no active device around here, Do you still want to continue?\n"
+msgstr ""
+"Vypadá to, že v dosahu není žádné zařízení. Přesto se chcete připojit?\n"
+
+#: ../src/sendfile.c:290
+msgid "Select File to Beam"
+msgstr "Zvolte soubor k odeslání"
+
+#: ../ircp-tray.desktop.in.h:1
+msgid "A simple OBEX file transfer applet"
+msgstr "Jednoduchý aplet pro odesílání souborů pomocí OBEX"

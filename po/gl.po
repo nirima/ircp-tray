@@ -1,0 +1,329 @@
+# Galician translation for ircp-tray
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the ircp-tray package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ircp-tray\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-26 15:58+0200\n"
+"PO-Revision-Date: 2009-12-11 09:12+0000\n"
+"Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
+"Language-Team: Galician <gl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-06-26 01:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#. Translators: the following string contains one strings that
+#. * is passed to it: is the ircp-tray program name.
+#.
+#: ../src/ircptray.c:59
+#, c-format
+msgid ""
+"Usage:\n"
+"  %s: [-v] [-h]\n"
+msgstr ""
+"Uso:\n"
+"  %s: [-v] [-h]\n"
+
+#. Translators: the following string contains two strings that
+#. * are passed to it: the first is the ircp-tray program name and
+#. * the second is the program version number.
+#.
+#: ../src/ircptray.c:69
+#, c-format
+msgid ""
+"%s version %s\n"
+"\n"
+msgstr ""
+"%s versión %s\n"
+"\n"
+
+#: ../src/app.c:60
+msgid "You don't seem to have IrDA enabled in your kernel, quit."
+msgstr "Parece que IrDA non esta habilitado no kernel. Saíndo."
+
+#: ../src/app.c:76
+msgid "IrDA service not started!"
+msgstr "Servizo IrDA non iniciado!"
+
+#: ../src/app.c:80
+#, c-format
+msgid ""
+"<i>You must edit <b>\"/etc/default/irda-utils\"</b> and set irattach to "
+"start it on boot.\n"
+"\n"
+"Otherwise, try typing in terminal:\n"
+"\n"
+"\"sudo irattach /dev/ttyS1 -s\"\n"
+"\n"
+"Read the irattach manual for more info.\n"
+"\n"
+"<span color=\"#f00000\" style=\"normal\"><b>%s will not be able to work.</"
+"b></span></i>"
+msgstr ""
+"<i>Debe editar <b>\"/etc/default/irda-utils\"</b> e estabelecer irattach "
+"para inicalo no arranque do sistema.\n"
+"\n"
+"Pola contra, tente escribir no terminal:\n"
+"\n"
+"«sudo irattach /dev/ttyS1 -s»\n"
+"\n"
+"Consulte o manual de irattach para obter máis información.\n"
+"\n"
+"<span color=\"#f00000\" style=\"normal\"><b>%s non será quen de funcionar.</"
+"b></span></i>"
+
+#: ../src/app.c:176
+msgid "Send Files"
+msgstr "Enviar ficheiros"
+
+#: ../src/app.c:186
+msgid "Get Devices Info"
+msgstr "Obter información de dispositivos"
+
+#: ../src/app.c:196
+msgid "Show History"
+msgstr "Amosar o historial"
+
+#: ../src/app.c:244 ../src/app.c:246
+msgid "Send files via infrared"
+msgstr "Enviar ficheiros por infravermellos"
+
+#. Feel free to put your names here translators :-)
+#: ../src/app.c:332
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Miguel Anxo Bouzada https://launchpad.net/~mbouzada"
+
+#: ../src/app.c:340
+msgid "A utility for IrDA OBEX beaming and receiving"
+msgstr "Utilidade para envio e recepción de ficheiros a través de IrDA OBEX"
+
+#. new device discovered
+#: ../src/app.c:452
+#, c-format
+msgid "Remote device discovered: %s"
+msgstr "Atopouse o dispositivo remoto: %s"
+
+#: ../src/app.c:473
+#, c-format
+msgid "Infrared File Transfer: %s"
+msgstr "Transferencia de ficheiros por infravermellos: %s"
+
+#: ../src/app.c:505
+#, c-format
+msgid "Remote device %s disappeared"
+msgstr "O dispositivo remoto %s desapareceu"
+
+#: ../src/app.c:522 ../src/app.c:524
+msgid "Infrared File Transfer"
+msgstr "Transferencia de ficheiros por infravermellos"
+
+#: ../src/app.c:591
+msgid "<b>Hints</b>"
+msgstr "<b>Suxestion</b>"
+
+#: ../src/app.c:592
+msgid "PNP"
+msgstr "PNP"
+
+#: ../src/app.c:593
+msgid "PDA"
+msgstr "PDA"
+
+#: ../src/app.c:594
+msgid "COMPUTER"
+msgstr "ORDENADOR"
+
+#: ../src/app.c:595
+msgid "PRINTER"
+msgstr "IMPRESORA"
+
+#: ../src/app.c:596
+msgid "MODEM"
+msgstr "MODEM"
+
+#: ../src/app.c:597
+msgid "FAX"
+msgstr "FAX"
+
+#: ../src/app.c:598
+msgid "LAN"
+msgstr "REDE"
+
+#: ../src/app.c:599
+msgid "EXTENSION"
+msgstr "EXTENSIÓN"
+
+#: ../src/app.c:600
+msgid "TELEPHONY"
+msgstr "TELEFONIA"
+
+#: ../src/app.c:601
+msgid "FILESERVER"
+msgstr "SERVIDOR DE FICHEIROS"
+
+#: ../src/app.c:602
+msgid "COMM"
+msgstr "COMM"
+
+#: ../src/app.c:603
+msgid "MESSAGE"
+msgstr "MENSAXE"
+
+#: ../src/app.c:604
+msgid "HTTP"
+msgstr "HTTP"
+
+#: ../src/app.c:605
+msgid "OBEX"
+msgstr "OBEX"
+
+#. Window title
+#: ../src/app.c:617
+msgid "Information"
+msgstr "Información"
+
+#: ../src/app.c:757
+msgid "History"
+msgstr "Historial"
+
+#. Frame
+#: ../src/app.c:771
+msgid "<b>Transfers History</b>"
+msgstr "<b>Historial de transferencias</b>"
+
+#: ../src/progresswin.c:65
+msgid "Beaming Progress"
+msgstr "Estado do envio"
+
+#: ../src/progresswin.c:128
+#, c-format
+msgid "<b>Transfering</b> %s"
+msgstr "<b>Transferindo</b> %s"
+
+#: ../src/progresswin.c:139
+#, c-format
+msgid "<small>%.1f KiB of %.1f KiB (%.1fbps)</small>"
+msgstr "<small>%.1f KiB de %.1f KiB (%.1fbps)</small>"
+
+#: ../src/progresswin.c:141
+#, c-format
+msgid "<small>%.1f KiB of %.1f KiB</small>"
+msgstr "<small>%.1f KiB de %.1f KiB</small>"
+
+#: ../src/progresswin.c:148
+#, c-format
+msgid "%d bytes"
+msgstr "%d bytes"
+
+#: ../src/recvfile.c:78 ../src/sendfile.c:193
+msgid "succeeded"
+msgstr "logrado"
+
+#: ../src/recvfile.c:80 ../src/sendfile.c:195
+msgid "failed"
+msgstr "fallou"
+
+#: ../src/recvfile.c:82 ../src/sendfile.c:197
+msgid "aborted"
+msgstr "abortado"
+
+#: ../src/recvfile.c:87
+#, c-format
+msgid "Receive %s %s"
+msgstr "Recibir %s %s"
+
+#: ../src/recvfile.c:248
+msgid "Infrared file received"
+msgstr "Ficheiro recibido por infravermellos"
+
+#: ../src/recvfile.c:249
+#, c-format
+msgid ""
+"Saved to: %s\n"
+"Size: %d bytes"
+msgstr ""
+"Gardado en: %s\n"
+"Tamaño: %d bytes"
+
+#: ../src/recvfile.c:270
+msgid "File receiving was aborted by remote"
+msgstr "A recepción foi cancelada polo dispositivo remoto"
+
+#: ../src/recvfile.c:310
+msgid "Incoming File Transfer"
+msgstr "Transferencia entrante"
+
+#: ../src/recvfile.c:329
+msgid "File already exists"
+msgstr "O ficheiro xa existe"
+
+#: ../src/recvfile.c:332
+#, c-format
+msgid "The file \"%s\" already exists. Would you like to replace it?"
+msgstr "O ficheiro «%s» xa existe. Desexa substituilo?"
+
+#: ../src/recvfile.c:335
+msgid "_Replace"
+msgstr "_Substituír"
+
+#: ../src/recvfile.c:357
+msgid "Unable to open file for saving"
+msgstr "Non se pode gardar o ficheiro"
+
+#: ../src/savefiledlg.c:35
+msgid "Incoming File Transfer Request"
+msgstr "Solicitada recepción de ficheiro"
+
+#: ../src/savefiledlg.c:46
+#, c-format
+msgid ""
+"A remote IrDA device (%s) is attempting to send you a file. Do you want to "
+"accept it?"
+msgstr ""
+"Un dispositivo IR remoto (%s) tenta enviarlle un ficheiro. Desexa aceptalo?"
+
+#. label
+#: ../src/savefiledlg.c:52
+msgid "File name:"
+msgstr "Nome do ficheiro:"
+
+#. save to button
+#: ../src/savefiledlg.c:61
+msgid "Save to"
+msgstr "Gardar como"
+
+#: ../src/sendfile.c:130
+msgid "Unable to connect remote"
+msgstr "Non se puido conectar co dispositivo remoto"
+
+#: ../src/sendfile.c:204
+#, c-format
+msgid "Sending %s %s"
+msgstr "Enviando %s %s"
+
+#: ../src/sendfile.c:245
+msgid "File was sent successfully"
+msgstr "Ficheiro enviado correctamente"
+
+#: ../src/sendfile.c:248
+msgid "File beaming was aborted by remote"
+msgstr "A transmisión foi cancelada polo dispositivo remoto"
+
+#: ../src/sendfile.c:273
+msgid "It seems no active device around here, Do you still want to continue?\n"
+msgstr "Parece que non hai dispositivos activos arredor, Quere continuar?\n"
+
+#: ../src/sendfile.c:290
+msgid "Select File to Beam"
+msgstr "Seleccione o ficheiro para enviar"
+
+#: ../ircp-tray.desktop.in.h:1
+msgid "A simple OBEX file transfer applet"
+msgstr "Miniaplicación para transferencia de ficheiros con OBEX"

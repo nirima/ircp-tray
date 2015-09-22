@@ -1,0 +1,319 @@
+# Chinese translations for ircp-tray package
+# ircp-tray 软件包的简体中文翻译.
+# Copyright (C) 2007 THE ircp-tray'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ircp-tray package.
+# ZC Miao <hellwolf.misty@gmail.com>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ircp-tray 0.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-26 16:04+0200\n"
+"PO-Revision-Date: 2009-11-18 06:44+0000\n"
+"Last-Translator: TualatriX <Unknown>\n"
+"Language-Team: Chinese <translation-team-zh-cn@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-06-26 01:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#. Translators: the following string contains one strings that
+#. * is passed to it: is the ircp-tray program name.
+#.
+#: ../src/ircptray.c:59
+#, c-format
+msgid ""
+"Usage:\n"
+"  %s: [-v] [-h]\n"
+msgstr ""
+"用法:\n"
+"  %s: [-v] [-h]\n"
+
+#. Translators: the following string contains two strings that
+#. * are passed to it: the first is the ircp-tray program name and
+#. * the second is the program version number.
+#.
+#: ../src/ircptray.c:69
+#, c-format
+msgid ""
+"%s version %s\n"
+"\n"
+msgstr ""
+"%s 版本 %s\n"
+"\n"
+
+#: ../src/app.c:60
+msgid "You don't seem to have IrDA enabled in your kernel, quit."
+msgstr "你的内核没有包含红外线支持，退出执行"
+
+#: ../src/app.c:76
+msgid "IrDA service not started!"
+msgstr ""
+
+#: ../src/app.c:80
+#, c-format
+msgid ""
+"<i>You must edit <b>\"/etc/default/irda-utils\"</b> and set irattach to "
+"start it on boot.\n"
+"\n"
+"Otherwise, try typing in terminal:\n"
+"\n"
+"\"sudo irattach /dev/ttyS1 -s\"\n"
+"\n"
+"Read the irattach manual for more info.\n"
+"\n"
+"<span color=\"#f00000\" style=\"normal\"><b>%s will not be able to work.</"
+"b></span></i>"
+msgstr ""
+
+#: ../src/app.c:176
+msgid "Send Files"
+msgstr "发送文件"
+
+#: ../src/app.c:186
+msgid "Get Devices Info"
+msgstr "获取设备信息"
+
+#: ../src/app.c:196
+msgid "Show History"
+msgstr "显示历史"
+
+#: ../src/app.c:244 ../src/app.c:246
+msgid "Send files via infrared"
+msgstr ""
+
+#. Feel free to put your names here translators :-)
+#: ../src/app.c:332
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  TualatriX https://launchpad.net/~tualatrix\n"
+"  ZC Miao https://launchpad.net/~hellwolf-misty"
+
+#: ../src/app.c:340
+msgid "A utility for IrDA OBEX beaming and receiving"
+msgstr "红外线文件传输和接受工具"
+
+#. new device discovered
+#: ../src/app.c:452
+#, c-format
+msgid "Remote device discovered: %s"
+msgstr "发现远程设备: %s"
+
+#: ../src/app.c:473
+#, c-format
+msgid "Infrared File Transfer: %s"
+msgstr "红外文件传输器：%s"
+
+#: ../src/app.c:505
+#, c-format
+msgid "Remote device %s disappeared"
+msgstr "远程设备 %s 已消失"
+
+#: ../src/app.c:522 ../src/app.c:524
+msgid "Infrared File Transfer"
+msgstr "红外文件传输器"
+
+#: ../src/app.c:591
+msgid "<b>Hints</b>"
+msgstr ""
+
+#: ../src/app.c:592
+msgid "PNP"
+msgstr ""
+
+#: ../src/app.c:593
+msgid "PDA"
+msgstr ""
+
+#: ../src/app.c:594
+msgid "COMPUTER"
+msgstr ""
+
+#: ../src/app.c:595
+msgid "PRINTER"
+msgstr ""
+
+#: ../src/app.c:596
+msgid "MODEM"
+msgstr ""
+
+#: ../src/app.c:597
+msgid "FAX"
+msgstr "传真"
+
+#: ../src/app.c:598
+msgid "LAN"
+msgstr "局域网"
+
+#: ../src/app.c:599
+msgid "EXTENSION"
+msgstr "扩展"
+
+#: ../src/app.c:600
+msgid "TELEPHONY"
+msgstr ""
+
+#: ../src/app.c:601
+msgid "FILESERVER"
+msgstr ""
+
+#: ../src/app.c:602
+msgid "COMM"
+msgstr ""
+
+#: ../src/app.c:603
+msgid "MESSAGE"
+msgstr ""
+
+#: ../src/app.c:604
+msgid "HTTP"
+msgstr ""
+
+#: ../src/app.c:605
+msgid "OBEX"
+msgstr ""
+
+#. Window title
+#: ../src/app.c:617
+msgid "Information"
+msgstr ""
+
+#: ../src/app.c:757
+msgid "History"
+msgstr ""
+
+#. Frame
+#: ../src/app.c:771
+msgid "<b>Transfers History</b>"
+msgstr ""
+
+#: ../src/progresswin.c:65
+msgid "Beaming Progress"
+msgstr "传输中"
+
+#: ../src/progresswin.c:128
+#, c-format
+msgid "<b>Transfering</b> %s"
+msgstr "<b>正在传输</b> %s"
+
+#: ../src/progresswin.c:139
+#, c-format
+msgid "<small>%.1f KiB of %.1f KiB (%.1fbps)</small>"
+msgstr ""
+
+#: ../src/progresswin.c:141
+#, c-format
+msgid "<small>%.1f KiB of %.1f KiB</small>"
+msgstr ""
+
+#: ../src/progresswin.c:148
+#, c-format
+msgid "%d bytes"
+msgstr "%d 字节"
+
+#: ../src/recvfile.c:78 ../src/sendfile.c:193
+msgid "succeeded"
+msgstr ""
+
+#: ../src/recvfile.c:80 ../src/sendfile.c:195
+msgid "failed"
+msgstr ""
+
+#: ../src/recvfile.c:82 ../src/sendfile.c:197
+msgid "aborted"
+msgstr ""
+
+#: ../src/recvfile.c:87
+#, c-format
+msgid "Receive %s %s"
+msgstr ""
+
+#: ../src/recvfile.c:248
+msgid "Infrared file received"
+msgstr "红外文件成功接收"
+
+#: ../src/recvfile.c:249
+#, c-format
+msgid ""
+"Saved to: %s\n"
+"Size: %d bytes"
+msgstr ""
+"保存至：%s\n"
+"大小：%d 字节"
+
+#: ../src/recvfile.c:270
+msgid "File receiving was aborted by remote"
+msgstr "文件接收被远端终止"
+
+#: ../src/recvfile.c:310
+msgid "Incoming File Transfer"
+msgstr "有人试图发送文件给您"
+
+#: ../src/recvfile.c:329
+msgid "File already exists"
+msgstr ""
+
+#: ../src/recvfile.c:332
+#, c-format
+msgid "The file \"%s\" already exists. Would you like to replace it?"
+msgstr ""
+
+#: ../src/recvfile.c:335
+msgid "_Replace"
+msgstr ""
+
+#: ../src/recvfile.c:357
+msgid "Unable to open file for saving"
+msgstr "无法保存文件"
+
+#: ../src/savefiledlg.c:35
+msgid "Incoming File Transfer Request"
+msgstr "有人试图发送文件给您"
+
+#: ../src/savefiledlg.c:46
+#, c-format
+msgid ""
+"A remote IrDA device (%s) is attempting to send you a file. Do you want to "
+"accept it?"
+msgstr "一个叫 %s 的远端设备企图发送一个文件给您。您想接收吗？"
+
+#. label
+#: ../src/savefiledlg.c:52
+msgid "File name:"
+msgstr "文件名："
+
+#. save to button
+#: ../src/savefiledlg.c:61
+msgid "Save to"
+msgstr "保存至"
+
+#: ../src/sendfile.c:130
+msgid "Unable to connect remote"
+msgstr "无法连接远程设备"
+
+#: ../src/sendfile.c:204
+#, c-format
+msgid "Sending %s %s"
+msgstr ""
+
+#: ../src/sendfile.c:245
+msgid "File was sent successfully"
+msgstr "文件传输成功"
+
+#: ../src/sendfile.c:248
+msgid "File beaming was aborted by remote"
+msgstr "文件发送被远端终止"
+
+#: ../src/sendfile.c:273
+msgid "It seems no active device around here, Do you still want to continue?\n"
+msgstr "没有发现激活的设备，仍然继续吗？\n"
+
+#: ../src/sendfile.c:290
+msgid "Select File to Beam"
+msgstr "请选择需要传输的文件"
+
+#: ../ircp-tray.desktop.in.h:1
+msgid "A simple OBEX file transfer applet"
+msgstr ""

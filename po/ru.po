@@ -1,0 +1,336 @@
+# Russian translation for ircp-tray
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the ircp-tray package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ircp-tray\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-02-16 02:53+0100\n"
+"PO-Revision-Date: 2010-03-02 04:24+0000\n"
+"Last-Translator: Minakov Arthur <Unknown>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-06-26 01:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#. Translators: the following string contains one strings that
+#. * is passed to it: is the ircp-tray program name.
+#. 
+#: ../src/ircptray.c:59
+#, c-format
+msgid ""
+"Usage:\n"
+"  %s: [-v] [-h]\n"
+msgstr ""
+"Использование:\n"
+"  %s: [-v] [-h]\n"
+
+#. Translators: the following string contains two strings that
+#. * are passed to it: the first is the ircp-tray program name and
+#. * the second is the program version number.
+#. 
+#: ../src/ircptray.c:69
+#, c-format
+msgid ""
+"%s version %s\n"
+"\n"
+msgstr ""
+"%s версия %s\n"
+"\n"
+
+#: ../src/app.c:60
+msgid "You don't seem to have IrDA enabled in your kernel, quit."
+msgstr "Кажется IrDA у вас не включено в ядро. Выход."
+
+#: ../src/app.c:76
+msgid "IrDA service not started!"
+msgstr "Сервис ИК-порта не запущен"
+
+#: ../src/app.c:80
+#, c-format
+msgid ""
+"<i>You must edit <b>\"/etc/default/irda-utils\"</b> and set irattach to "
+"start it on boot.\n"
+"\n"
+"Otherwise, try typing in terminal:\n"
+"\n"
+"\"sudo irattach /dev/ttyS1 -s\"\n"
+"\n"
+"Read the irattach manual for more info.\n"
+"\n"
+"<span color=\"#f00000\" style=\"normal\"><b>%s will not be able to "
+"work.</b></span></i>"
+msgstr ""
+"<i>Вы должны настроить <b>\"/etc/default/irda-utils\"</b> и установить "
+"запуск irattach при загрузке.\n"
+"\n"
+"Или запустите в терминале:\n"
+"\n"
+"\"sudo irattach /dev/ttyS1 -s\"\n"
+"\n"
+"Для большей информации прочтите руководство пользователя irattach.\n"
+"\n"
+"<span color=\"#f00000\" style=\"normal\"><b>%s не будет "
+"работать.</b></span></i>"
+
+#: ../src/app.c:176
+msgid "Send Files"
+msgstr "Отправка файлов"
+
+#: ../src/app.c:186
+msgid "Get Devices Info"
+msgstr "Информация о устройствах"
+
+#: ../src/app.c:196
+msgid "Show History"
+msgstr "Журнал"
+
+#: ../src/app.c:244 ../src/app.c:246
+msgid "Send files via infrared"
+msgstr "Отправить файлы через ИК"
+
+#. Feel free to put your names here translators :-)
+#: ../src/app.c:332
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Alexei Klimenko https://launchpad.net/~nimda7\n"
+"  Minakov Arthur https://launchpad.net/~spydefender\n"
+"  Roman A. aka BasicXP https://launchpad.net/~basicxp\n"
+"  Serguey Basalaev https://launchpad.net/~sbasalaev"
+
+#: ../src/app.c:340
+msgid "A utility for IrDA OBEX beaming and receiving"
+msgstr "Приложение для приема и передачи IrDA OBEX"
+
+#. new device discovered
+#: ../src/app.c:452
+#, c-format
+msgid "Remote device discovered: %s"
+msgstr "Обнаружено удаленное устройство: %s"
+
+#: ../src/app.c:473
+#, c-format
+msgid "Infrared File Transfer: %s"
+msgstr "Передача файла по ИК: %s"
+
+#: ../src/app.c:505
+#, c-format
+msgid "Remote device %s disappeared"
+msgstr "Удаленное устройство %s отключено"
+
+#: ../src/app.c:522 ../src/app.c:524
+msgid "Infrared File Transfer"
+msgstr "Передача файла по ИК"
+
+#: ../src/app.c:591
+msgid "<b>Hints</b>"
+msgstr "<b>Подсказки</b>"
+
+#: ../src/app.c:592
+msgid "PNP"
+msgstr "PNP"
+
+#: ../src/app.c:593
+msgid "PDA"
+msgstr "КПК"
+
+#: ../src/app.c:594
+msgid "COMPUTER"
+msgstr "КОМПЬЮТЕР"
+
+#: ../src/app.c:595
+msgid "PRINTER"
+msgstr "ПРИНТЕР"
+
+#: ../src/app.c:596
+msgid "MODEM"
+msgstr "МОДЕМ"
+
+#: ../src/app.c:597
+msgid "FAX"
+msgstr "ФАКС"
+
+#: ../src/app.c:598
+msgid "LAN"
+msgstr "ЛВС"
+
+#: ../src/app.c:599
+msgid "EXTENSION"
+msgstr "РАСШИРЕНИЕ"
+
+#: ../src/app.c:600
+msgid "TELEPHONY"
+msgstr "ТЕЛЕФОНИЯ"
+
+#: ../src/app.c:601
+msgid "FILESERVER"
+msgstr "ФАЙЛОВЫЙ СЕРВЕР"
+
+#: ../src/app.c:602
+msgid "COMM"
+msgstr "COMM"
+
+#: ../src/app.c:603
+msgid "MESSAGE"
+msgstr "СООБЩЕНИЕ"
+
+#: ../src/app.c:604
+msgid "HTTP"
+msgstr "HTTP"
+
+#: ../src/app.c:605
+msgid "OBEX"
+msgstr "OBEX"
+
+#. Window title
+#: ../src/app.c:617
+msgid "Information"
+msgstr "Информация"
+
+#: ../src/app.c:757
+msgid "History"
+msgstr "Журнал"
+
+#. Frame
+#: ../src/app.c:771
+msgid "<b>Transfers History</b>"
+msgstr "<b>История передач</b>"
+
+#: ../src/progresswin.c:65
+msgid "Beaming Progress"
+msgstr "Прогресс передачи"
+
+#: ../src/progresswin.c:129
+#, c-format
+msgid "<b>Transfering</b> %s"
+msgstr "<b>Передача</b> %s"
+
+#: ../src/progresswin.c:138
+#, c-format
+msgid "<small>%.1f KiB of %.1f KiB (%.1fbps)</small>"
+msgstr ""
+"Copy text   \t\r\n"
+"<small>%.1f KiB из %.1f KiB (%.1fbps)</small>"
+
+#: ../src/progresswin.c:140
+#, c-format
+msgid "<small>%.1f KiB of %.1f KiB</small>"
+msgstr "<small>%.1f Кбит из %.1f Кбит</small>"
+
+#: ../src/progresswin.c:146
+#, c-format
+msgid "%d bytes"
+msgstr "%d байт"
+
+#: ../src/recvfile.c:78 ../src/sendfile.c:193
+msgid "succeeded"
+msgstr "успешно"
+
+#: ../src/recvfile.c:80 ../src/sendfile.c:195
+msgid "failed"
+msgstr "неудачно"
+
+#: ../src/recvfile.c:82 ../src/sendfile.c:197
+msgid "aborted"
+msgstr "прервано"
+
+#: ../src/recvfile.c:87
+#, c-format
+msgid "Receive %s %s"
+msgstr "Получение %s %s"
+
+#: ../src/recvfile.c:248
+msgid "Infrared file received"
+msgstr "Получен файл по ИК"
+
+#: ../src/recvfile.c:249
+#, c-format
+msgid ""
+"Saved to: %s\n"
+"Size: %d bytes"
+msgstr ""
+"Сохранено в: %s\n"
+"Размер: %d байт"
+
+#: ../src/recvfile.c:270
+msgid "File receiving was aborted by remote"
+msgstr "Получение файла прервано удаленной стороной"
+
+#: ../src/recvfile.c:310
+msgid "Incoming File Transfer"
+msgstr "Передача Входящего Файла"
+
+#: ../src/recvfile.c:329
+msgid "File already exists"
+msgstr "Файл уже существует"
+
+#: ../src/recvfile.c:332
+#, c-format
+msgid "The file \"%s\" already exists. Would you like to replace it?"
+msgstr "Файл \"%s\" уже существует. Вы хотите заменить его?"
+
+#: ../src/recvfile.c:335
+msgid "_Replace"
+msgstr "_Заменить"
+
+#: ../src/recvfile.c:357
+msgid "Unable to open file for saving"
+msgstr "Невозможно открыть файл для сохранения"
+
+#: ../src/savefiledlg.c:35
+msgid "Incoming File Transfer Request"
+msgstr "Запрос Передачи Входящего Файла"
+
+#: ../src/savefiledlg.c:46
+#, c-format
+msgid ""
+"A remote IrDA device (%s) is attempting to send you a file. Do you want to "
+"accept it?"
+msgstr ""
+"Удаленное IrDA устройство (%s) пытается отправить вам файл. Вы хотите "
+"принять его?"
+
+#. label
+#: ../src/savefiledlg.c:52
+msgid "File name:"
+msgstr "Файл:"
+
+#. save to button
+#: ../src/savefiledlg.c:61
+msgid "Save to"
+msgstr "Сохранить как"
+
+#: ../src/sendfile.c:130
+msgid "Unable to connect remote"
+msgstr "Невозможно соединиться"
+
+#: ../src/sendfile.c:204
+#, c-format
+msgid "Sending %s %s"
+msgstr "Отправка %s %s"
+
+#: ../src/sendfile.c:245
+msgid "File was sent successfully"
+msgstr "Файл отправлен успешно"
+
+#: ../src/sendfile.c:248
+msgid "File beaming was aborted by remote"
+msgstr "Передача файла прервана"
+
+#: ../src/sendfile.c:273
+msgid ""
+"It seems no active device around here, Do you still want to continue?\n"
+msgstr "Не найдено активных устройств, Вы хотите продолжить?\n"
+
+#: ../src/sendfile.c:290
+msgid "Select File to Beam"
+msgstr "Выберите файл для отправки"
+
+#: ../ircp-tray.desktop.in.h:1
+msgid "A simple OBEX file transfer applet"
+msgstr "Простой OBEX апплет"

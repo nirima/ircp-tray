@@ -1,0 +1,12 @@
+src/ircptray.c
+src/ircptray_main.c
+src/dirtraverse.c
+src/ircp_client.c
+src/ircp_io.c
+src/ircp_server.c
+src/irda_misc.c
+src/progresswin.c
+src/recvfile.c
+src/savefiledlg.c
+src/sendfile.c
+data/ircp-tray.desktop.in
