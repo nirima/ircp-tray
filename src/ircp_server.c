@@ -80,26 +80,31 @@ void srv_obex_event(obex_t *handle, obex_object_t *object, int mode, int event, 
 		
 	/* An incoming request has arrived */
 	case OBEX_EV_REQ:
-		DEBUG(4, "Incoming request %02x, %d\n", obex_cmd, OBEX_CMD_SETPATH);
+		DEBUG(4, "OBEX_EV_REQ: Incoming request %02x, %d\n", obex_cmd, OBEX_CMD_SETPATH);
 
 		switch(obex_cmd) {
 		case OBEX_CMD_CONNECT:
+			DEBUG(4, "OBEX_CMD_CONNECT\n");
 			srv->infocb(IRCP_EV_CONNECTIND, "");
 			ret = 1;
 			break;
 		case OBEX_CMD_DISCONNECT:
+			DEBUG(4, "OBEX_CMD_DISCONNECT\n");
 			srv->infocb(IRCP_EV_DISCONNECTIND, "");	
 			ret = 1;
 			break;
 
 		case OBEX_CMD_PUT:
+			DEBUG(4, "OBEX_CMD_PUT\n");
 			ret = ircp_srv_receive(srv, object, TRUE);
 			break;
 
 		case OBEX_CMD_SETPATH:
+			DEBUG(4, "OBEX_CMD_SETPATH\n");
 			ret = ircp_srv_setpath(srv, object);
 			break;
 		default:
+			DEBUG(4,"Unknown %d\n", obex_cmd);
 			ret = 1;
 			break;
 		}
@@ -113,6 +118,7 @@ void srv_obex_event(obex_t *handle, obex_object_t *object, int mode, int event, 
 		
 	/* An incoming request is about to come */
 	case OBEX_EV_REQHINT:
+	DEBUG(4, "OBEX_EV_REQHINT\n");
 		/* An incoming request is about to come. Accept it! */
 		switch(obex_cmd) {
 		case OBEX_CMD_PUT:
@@ -471,6 +477,8 @@ static void get_incoming_file_info(obex_t* handle, obex_object_t* object, ircp_s
 	int hlen;
 	char* utf8;
 		
+	DEBUG(4,"get_incoming_file_info");
+
 	while(OBEX_ObjectGetNextHeader(handle, object, &hi, &hv, &hlen))
 	{
 		switch(hi)	{
@@ -495,7 +503,13 @@ static void get_incoming_file_info(obex_t* handle, obex_object_t* object, ircp_s
 		recvfile_launch_dialog(utf8, &srv->localfilename, 
 						&srv->fd);
 		free(utf8);
+		
+		DEBUG(4,"filename %s local %s fd %d\n", srv->filename, srv->localfilename, srv->fd);
+		
 		if(srv->fd<0) {
+
+			
+
 			srv->finished = TRUE;
 			srv->success = FALSE;
 		}
