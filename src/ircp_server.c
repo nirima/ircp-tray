@@ -58,7 +58,7 @@ void srv_obex_event(obex_t *handle, obex_object_t *object, int mode, int event, 
 	}
 
 	DEBUG(5, "OBEX OBJECT\n");
-	if( object == null )
+	if( object == NULL )
 		DEBUG(5,"(null)\n");
 	else
 	{
@@ -145,9 +145,10 @@ void srv_obex_event(obex_t *handle, obex_object_t *object, int mode, int event, 
 		break;
 		
 	/* Request has finished */
-	case OBEX_EV_REQDONE:
+	case OBEX_EV_REQDONE: // 3
 		DEBUG(4, "OBEX_EV_REQDONE\n");
 		if(obex_cmd == OBEX_CMD_DISCONNECT) {
+			DEBUG(4," -- OBEX_CMD_DISCONNECT\n");
 			srv->finished = TRUE;
 			srv->success = TRUE;
 		}
