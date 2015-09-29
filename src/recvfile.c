@@ -206,7 +206,10 @@ static gboolean recvfile_onrecv(GIOChannel *source,
 
 	if(srv->object) {
 		DEBUG(4," srv->object\n");
-		recvfile_launch_dialog(&srv->fd);
+		//recvfile_launch_dialog(&srv->fd);
+		
+	   srv->fd = open("/home/magnayn/irda", O_WRONLY | O_CREAT | O_TRUNC, DEFFILEMODE);
+
 		if(srv->fd<0) {
 			perror("Target file open failed");
 			OBEX_ObjectSetRsp(srv->object,
