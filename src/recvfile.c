@@ -192,6 +192,12 @@ static gboolean recvfile_onrecv(GIOChannel *source,
 		progress_window_update(RecvFilePgswin, srv->finishedsize, srv->filelength, transfer_rate);
 	}
 
+	if( srv->fd == 0)
+	{
+		DEBUG(4,"MAKE FD\n");
+		srv->fd = open("/home/magnayn/irda", O_WRONLY | O_CREAT | O_TRUNC, DEFFILEMODE);
+	}
+
 	if(srv->fd >= 0 && !RecvFilePgswin) {
 		char* utf8;
 		utf8 = (char*) filename_to_utf8(srv->filename);
@@ -202,13 +208,13 @@ static gboolean recvfile_onrecv(GIOChannel *source,
 		timer = g_timer_new ();
 	}
 
-	/* ADD? */
+	/* ADD? 
 
 	if(srv->object) {
 		DEBUG(4," srv->object\n");
 		//recvfile_launch_dialog(&srv->fd);
 		
-	   srv->fd = open("/home/magnayn/irda", O_WRONLY | O_CREAT | O_TRUNC, DEFFILEMODE);
+	   
 
 		if(srv->fd<0) {
 			perror("Target file open failed");
@@ -222,7 +228,7 @@ static gboolean recvfile_onrecv(GIOChannel *source,
 		OBEX_ObjectReadStream(srv->obexhandle,
 				srv->object, NULL);
 		srv->object = NULL;
-	}
+	}*/
 
 	if(srv->finished)
 	{
