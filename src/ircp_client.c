@@ -460,6 +460,7 @@ int ircp_put(ircp_client_t *cli, char *name)
 	char *origdir;
 	int ret;
 	char* remotename;
+	DEBUG(4, "ircp_put %s\n", name);
 	
 	/* Remember cwd */
 	origdir = getcwd(NULL, 0);

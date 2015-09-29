@@ -202,7 +202,10 @@ static gboolean recvfile_onrecv(GIOChannel *source,
 		timer = g_timer_new ();
 	}
 
-	/*if(srv->object) {
+	/* ADD? */
+
+	if(srv->object) {
+		DEBUG(4," srv->object\n");
 		recvfile_launch_dialog(&srv->fd);
 		if(srv->fd<0) {
 			perror("Target file open failed");
@@ -216,7 +219,7 @@ static gboolean recvfile_onrecv(GIOChannel *source,
 		OBEX_ObjectReadStream(srv->obexhandle,
 				srv->object, NULL);
 		srv->object = NULL;
-	}*/
+	}
 
 	if(srv->finished)
 	{

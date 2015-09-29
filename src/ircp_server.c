@@ -57,6 +57,15 @@ void srv_obex_event(obex_t *handle, obex_object_t *object, int mode, int event, 
 		return;
 	}
 
+	DEBUG(5, "OBEX OBJECT\n");
+	if( object == null )
+		DEBUG(5,"(null)\n");
+	else
+	{
+
+	}
+
+
 	switch (event)	{
 	
 	/* Time to pick up data when receiving a stream */
@@ -131,11 +140,13 @@ void srv_obex_event(obex_t *handle, obex_object_t *object, int mode, int event, 
 		
 	/* First packet of an incoming request has been parsed */
 	case OBEX_EV_REQCHECK:
+	    DEBUG(4, "OBEX_EV_REQCHECK\n");
 		srv->infocb(IRCP_EV_RECEIVING, srv->filename);	
 		break;
 		
 	/* Request has finished */
 	case OBEX_EV_REQDONE:
+		DEBUG(4, "OBEX_EV_REQDONE\n");
 		if(obex_cmd == OBEX_CMD_DISCONNECT) {
 			srv->finished = TRUE;
 			srv->success = TRUE;
