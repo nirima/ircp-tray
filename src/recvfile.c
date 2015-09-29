@@ -181,6 +181,9 @@ static gboolean recvfile_onrecv(GIOChannel *source,
 	DEBUG(4, "HandleInput %d\n", ret);
 	DEBUG(4, "fd %d\n", srv->fd);
 	DEBUG(4, "filename %s\n", srv->filename);
+	DEBUG(4, "finished %s\n", srv->finished);
+	DEBUG(4, "success %s\n", srv->success);
+	
 	if (ret < 0) {
 		srv->finished = TRUE;
 		srv->success = FALSE;

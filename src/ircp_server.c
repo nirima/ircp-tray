@@ -242,8 +242,12 @@ int ircp_srv_setpath(ircp_server_t *srv, obex_object_t *object)
 		srv->dirdepth--;
 	}
 	else {
-		if(name == NULL)
-			goto out;
+		if(name == NULL) {
+			DEBUG(4, "NULL Name\n");
+			return 1;
+			
+			//goto out;
+		}
 		
 		// A setpath with empty name meens "goto root"
 		if(strcmp(name, "") == 0) {
