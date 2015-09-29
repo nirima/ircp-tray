@@ -47,6 +47,7 @@ void srv_obex_event(obex_t *handle, obex_object_t *object, int mode, int event, 
 
 	if(!srv->localfilename && !srv->finished && object)
 		get_incoming_file_info(handle, object, srv);
+	
 	DEBUG(4,"OBEX Event: 0x%x Command: 0x%x\n", event, obex_cmd);
 
 	if(srv->finished) {

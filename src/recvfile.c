@@ -382,7 +382,7 @@ void recvfile_launch_dialog(char* filename_u, char** localfilename, int* fd)
 			gtk_widget_destroy(dialog);
 		}
 
-
+		printf("Local filename: %s\n", filename);
 		*localfilename = filename;
 	}else
 		DEBUG(5,"Recvfile dialog quit\n");
